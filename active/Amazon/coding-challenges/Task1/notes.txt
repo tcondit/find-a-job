@@ -1,0 +1,15 @@
+
+a string S of N characters
+
+digits, spaces, dashes
+
+
+N is an integer within the range [2..100]
+
+S consists only of digits, spaces, and/or dashes
+
+for each char in S:
+  newstring = ''
+  if char.isdigit():
+    newstring.join(char)
+
