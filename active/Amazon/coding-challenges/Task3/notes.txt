@@ -1,0 +1,17 @@
+
+
+array A of N integers
+
+given two indices I and J, such that
+	0 <= I <= J <= N
+
+exchange values at I and J
+
+GOAL: check whether the array can be sorted into non-decreasing order by
+performing at most one swap operation.
+
+
+N is an integer within the range [1..100]
+
+each element of array A is an element in the range [0..1 000 000 000]
+
