@@ -13,5 +13,15 @@ def solution(A, B):
     _A = list(str(A))
     _B = list(str(B))
 
-    map(None, _A, _B)
+    zipped_tuple = sum(tuple(map(None, _A, _B)), ())
 
+    # >>> sum(tuple(map(None, _a, _b)), ())
+    # ('2', '5', '9', '0', '9', None)
+
+    zipped_list = []
+
+    for _next in zipped_tuple:
+        if _next: # it's not None
+            zipped_list.append(_next)
+
+    return ''.join(zipped_list)
