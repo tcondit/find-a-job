@@ -11,6 +11,7 @@ def solution(A):
     if A == sorted(A):
         return True
 
+
     max = 0
     _I = 0
     _J = 0
@@ -23,10 +24,10 @@ def solution(A):
             break
 
     I = A[_I-1]
-    print 'I:', I
+#    print 'I:', I
 
     max2 = A[_I]
-    print 'A[_I]:', A[_I]
+#    print 'A[_I]:', A[_I]
 
     for m in range(_I, len(A)-1):
         if m >= max2:
@@ -36,5 +37,12 @@ def solution(A):
             break
 
     J = A[_J-1]
-    print 'J:', J
+#    print 'J:', J
+
+    B = []
+    # this will fail if there's no number higher than `I` later in the list
+    x, y = A.index(I), A.index(J)
+    A[x], A[y] = A[y], A[x]
+
+    return (A == sorted(A))
 
