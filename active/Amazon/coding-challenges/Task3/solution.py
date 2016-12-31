@@ -13,17 +13,32 @@ def solution(A):
     # True if == sorted, else False
 
     max = 0
-    I_plus_plus = 0
+    _I = 0
+    _J = 0
 
     for m in A:
         if m >= max:
             max = m
         else:
-            print 'breaking', m 
-            I_plus_plus = A.index(m)
-            break # found a local max
-    print 'one step beyond:', I_plus_plus
+#            print 'breaking', m 
+            _I = A.index(m)
+            break # found first local max
+#    print '1/one step beyond:', _I
 
-    # this is  I
-    print A[I_plus_plus-1]
+    # this is I
+    I = A[_I-1]
 
+    for m in range(_I, len(A)):
+        print 'A[m]:', A[m]
+        if A[m] < I:
+#            print 'continuing'
+            continue
+        # found second local max
+        _J = A.index(A[m])
+        print '2/one step beyond:', _J
+
+    # this is J
+    J = A[_J-1]
+
+    print 'A[m]:', A[m]
+    print 'J:', J
