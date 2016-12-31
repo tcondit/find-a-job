@@ -24,4 +24,4 @@ def solution(A, B):
         if _next: # it's not None
             zipped_list.append(_next)
 
-    return ''.join(zipped_list)
+    return int(''.join(zipped_list))
