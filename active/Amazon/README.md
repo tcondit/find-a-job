@@ -54,3 +54,15 @@ T: :-)
 
 ## Resume
 
+
+## Programming Tests
+
+I thought I bombed it badly. Lydia came back and said I did great.
+
+## Next Steps
+
+Phone screen Tuesday 1/10 at 2pm with [    ] [    ] 
+
+My goal as of right now (8 minutes before Nortek interview begins) is to have
+an offer in hand days before, and use it as leverage.
+

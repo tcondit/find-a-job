@@ -1,3 +1,4 @@
+
 def solution(A):
 
     # find first number that drops after increasing or stay same (e.g., [1, 5, 3, 3, 7] -> 3)
@@ -27,18 +28,17 @@ def solution(A):
 
     max2 = A[_I]
 
-    for n in range(_I, len(A)-1):
-        if n >= max2:
-            max2 = n
+    for m in range(_I, len(A)-1):
+        if m >= max2:
+            max2 = m
         else:
-            J = A[-1]
-            print J
+            _J = A.index(m)
             break
 
+    J = A[_J-1]
+
     B = []
-    # this will fail if there's no number higher than `I` later in the list
     x, y = A.index(I), A.index(J)
     A[x], A[y] = A[y], A[x]
 
     return (A == sorted(A))
-
